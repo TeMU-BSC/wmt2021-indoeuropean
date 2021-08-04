@@ -8,7 +8,7 @@ The main idea is based on initializing a [multilingual transformer](https://gith
 
 After concatenating all the datasets, we pre-process them and we finetune the above described multilingual transformer on available parallel data.
 
-The pretrained model XLM-Roberta BASE, SentencePiece tokenizer and other necesary files can be downloaded with a command:
+The pretrained model XLM-Roberta BASE, SentencePiece tokenizer and other necessary files can be downloaded with a command:
 
     # Download xlmr.base model
     wget https://dl.fbaipublicfiles.com/fairseq/models/xlmr.base.tar.gz
