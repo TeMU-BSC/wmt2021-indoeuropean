@@ -1,0 +1,11 @@
+cffi==1.14.5
+Cython==0.29.22
+-e git+https://github.com/jordiae/fairseq.git@df2f84ce619edddb80e720a56abc74d5490fed99#egg=fairseq
+numpy==1.20.1
+portalocker==2.0.0
+pycparser==2.20
+regex==2020.11.13
+sacrebleu==1.5.1
+torch==1.8.0
+tqdm==4.59.0
+typing-extensions==3.7.4.3
