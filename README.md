@@ -14,3 +14,40 @@ The pretrained model XLM-Roberta BASE, SentencePiece tokenizer and other necesar
     wget https://dl.fbaipublicfiles.com/fairseq/models/xlmr.base.tar.gz
     tar -xzvf xlmr.base.tar.gz
 
+## Towards your MT model
+
+1. Ensure there's no train_test_overlap
+
+`clean_train_test_overlap.py`
+
+2. Tokenize the train, valid and test sets
+
+`tokenize.sh`
+
+3. Preprocess the data
+
+`preprocess-data-test.sh`
+
+`preprocess-data.sh`
+
+4. Finetune XLMR
+
+`finetune-xlmr-encoder-only.sh` 
+
+5. Generate translations
+
+`generate-ca-it-test-xlmr-gpu.sh`
+
+`generate-ca-it-valid-xlmr-gpu.sh`
+
+`generate-ca-oc-test-xlmr-gpu.sh`
+
+`generate-ca-oc-valid-xlmr-gpu.sh`
+
+`generate-ca-ro-test-xlmr-gpu.sh`
+
+`generate-ca-ro-valid-xlmr-gpu.sh`
+
+6. Generate XML delivery files 
+
+`make_xml_delivery.py`
