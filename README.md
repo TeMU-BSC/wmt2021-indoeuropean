@@ -6,7 +6,7 @@ The proposed method is described fully in the paper "Transfer Learning with Shal
 
 The main idea is based on initializing a [multilingual transformer](https://github.com/pytorch/fairseq/tree/master/examples/translation#multilingual-translation) for all required directions with a shared encoder, shared decoder and shared embedding tables by [XLM-Roberta BASE pretrained language model](https://github.com/pytorch/fairseq/tree/master/examples/xlmr) on the encoder side and a random shallow decoder of 3 layers. The code that we provide extend the available `fairseq/models/transformer_from_pretrained_xlm.py` with a multilingual functionality.
 
-After downloading the datasets and adding a small dataset ca-oc that we created from a crawling of the Catalan Government, we pre-process the datasets and we finetune the above described multilingual transformer on available parallel data.
+After concatenating all the datasets, we pre-process them and we finetune the above described multilingual transformer on available parallel data.
 
 The pretrained model XLM-Roberta BASE, SentencePiece tokenizer and other necesary files can be downloaded with a command:
 
