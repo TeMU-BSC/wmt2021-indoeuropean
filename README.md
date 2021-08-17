@@ -24,17 +24,21 @@ The pretrained model XLM-Roberta BASE, SentencePiece tokenizer and other necessa
 
 `tokenize.sh`
 
-3. Preprocess the data
+3. Remove sentences longer than 512 tokens of the parallel corpora
+
+`remove_max_512_parallel.py`
+
+4. Preprocess the data
 
 `preprocess-data-test.sh`
 
 `preprocess-data.sh`
 
-4. Finetune XLMR
+5. Finetune XLMR
 
 `finetune-xlmr-encoder-only.sh` 
 
-5. Generate translations
+6. Generate translations
 
 `generate-ca-it-test-xlmr-gpu.sh`
 
@@ -48,6 +52,6 @@ The pretrained model XLM-Roberta BASE, SentencePiece tokenizer and other necessa
 
 `generate-ca-ro-valid-xlmr-gpu.sh`
 
-6. Generate XML delivery files 
+7. Generate XML delivery files 
 
 `make_xml_delivery.py`
